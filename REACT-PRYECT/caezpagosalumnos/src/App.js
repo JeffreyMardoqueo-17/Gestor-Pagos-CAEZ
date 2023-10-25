@@ -117,8 +117,11 @@ function App() {
           </li>
         </ul>
       </div>
+      <div className='head'>
+      </div>
+      <div className='Contenido'></div>
     </div>
-    //
+    //PARTE DONDE ESTARA TODAS LAS PAGINAS DE ADENTRO
   );
 }
 
