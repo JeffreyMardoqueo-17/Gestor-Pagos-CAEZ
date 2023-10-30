@@ -22,7 +22,33 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     background-color: var(--bg-base);
+
 }
+ /* Estilo para la barra de desplazamiento */
+ ::-webkit-scrollbar {
+   width: 2px;
+   /* Ancho de la barra de desplazamiento */
+ }
+
+ /* Estilo para el riel de la barra de desplazamiento */
+ ::-webkit-scrollbar-track {
+   background: var(--bg-base);
+   /* Color de fondo del riel */
+ }
+
+ /* Estilo para el pulgar de la barra de desplazamiento (la parte que se arrastra) */
+ ::-webkit-scrollbar-thumb {
+   background: var(--blue);
+   /* Color del pulgar de la barra de desplazamiento */
+ }
+
+ /* Estilo para el pulgar de la barra de desplazamiento al pasar el mouse sobre él */
+ ::-webkit-scrollbar-thumb:hover {
+   background: var(--blue);
+   cursor: pointer;
+ }
+
+
 
 .contenedor {
     position: relative;
@@ -51,13 +77,15 @@ body {
 .institucion {
     font-size: 40px;
 }
-.top{
+
+.top {
     height: 80px;
     /* background-color: rebeccapurple; */
     margin-top: 20px;
     text-align: center;
     align-content: center;
 }
+
 .navigation.active {
     width: 80px;
 }
@@ -163,90 +191,118 @@ body {
     text-align: center;
     padding: 10px;
     border-bottom-left-radius: 20%;
-    border-bottom-right-radius:20%;
-    /* border-bottom: 2px solid var(--border); */ /*ESTA LA APLICO CUANDO SE HAGA PARA DISPOSITOVO*/
+    border-bottom-right-radius: 20%;
+    /* border-bottom: 2px solid var(--border); */
+    /*ESTA LA APLICO CUANDO SE HAGA PARA DISPOSITOVO*/
 }
 
-/*======SECCION PARA HACERLO ADAPTABLE===*/
-
-/* ====================== Responsive Design ========================== */
-@media (max-width: 800px) {
-    .head{
-        border-bottom: 3px solid var(--border);
-        text-align: left;
-    }
-    .head h2{
-        margin: 2px 0 5px 25px;
-    }
-    .navigation {
-        left: -300px;
-    }
-
-    .navigation.active {
-        width: 300px;
-        left: 0;
-    }
-
-    .main {
-        width: 100%;
-        left: 0;
-    }
-
-    .main.active {
-        left: 300px;
-    }
-
-    .cardBox {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* ===================== Contenido ===================== */
+/* Establece un área llamada 'contenido' en la cuadrícula. */
+.Contenido {
+    grid-area: contenido;
+    /* Posiciona el elemento de manera absoluta dentro de su contenedor. */
+    position: absolute;
+    /* Establece el ancho del elemento restando 300px al 100% del ancho del contenedor. */
+    width: calc(100% - 300px);
+    /* Desplaza el elemento hacia la derecha 300px desde el borde izquierdo del contenedor. */
+    left: 300px;
+    /* Establece una altura mínima del 100% del alto del viewport. */
+    min-height: 100vh;
+    /* Establece un fondo con el valor de una variable CSS llamada '--bg-base'. */
+    background: var(--bg-base);
+    /* Agrega una transición de 0.5 segundos para cambios en las propiedades del elemento. */
+    transition: 0.5s;
 }
+/* Estilo para la clase 'active' de '.Contenido' que se aplica en ciertas condiciones. */
+.Contenido.active {
 
-@media (max-width: 768px) {
-    .details {
-        grid-template-columns: 1fr;
-    }
-
-    .recentOrders {
-        overflow-x: auto;
-    }
-
-    .status.inProgress {
-        white-space: nowrap;
-    }
+    /* Cuando la clase 'active' está presente, cambia el ancho del elemento. */
+    width: calc(100% - 80px);
+    /* Cuando la clase 'active' está presente, desplaza el elemento a 80px desde el borde izquierdo. */
+    left:80px;
 }
+    /*======SECCION PARA HACERLO ADAPTABLE===*/
 
-@media (max-width: 480px) {
-    .cardBox {
-        grid-template-columns: repeat(1, 1fr);
+    /* ====================== Responsive Design ========================== */
+    @media (max-width: 800px) {
+        .head {
+            border-bottom: 3px solid var(--border);
+            text-align: left;
+        }
+
+        .head h2 {
+            margin: 2px 0 5px 25px;
+        }
+
+        .navigation {
+            left: -300px;
+        }
+
+        .navigation.active {
+            width: 300px;
+            left: 0;
+        }
+
+        .main {
+            width: 100%;
+            left: 0;
+        }
+
+        .main.active {
+            left: 300px;
+        }
+
+        .cardBox {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
-    .cardHeader h2 {
-        font-size: 20px;
+    @media (max-width: 768px) {
+        .details {
+            grid-template-columns: 1fr;
+        }
+
+        .recentOrders {
+            overflow-x: auto;
+        }
+
+        .status.inProgress {
+            white-space: nowrap;
+        }
     }
 
-    .user {
-        min-width: 40px;
-    }
+    @media (max-width: 480px) {
+        .cardBox {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
-    .navigation {
-        width: 100%;
-        left: -100%;
-        z-index: 1000;
-    }
+        .cardHeader h2 {
+            font-size: 20px;
+        }
 
-    .navigation.active {
-        width: 100%;
-        left: 0;
-    }
+        .user {
+            min-width: 40px;
+        }
 
-    .toggle {
-        z-index: 10001;
-    }
+        .navigation {
+            width: 100%;
+            left: -100%;
+            z-index: 1000;
+        }
 
-    .main.active .toggle {
-        color: #fff;
-        position: fixed;
-        right: 0;
-        left: initial;
+        .navigation.active {
+            width: 100%;
+            left: 0;
+        }
+
+        .toggle {
+            z-index: 10001;
+        }
+
+        .main.active .toggle {
+            color: #fff;
+            position: fixed;
+            right: 0;
+            left: initial;
+        }
     }
-}
