@@ -85,11 +85,11 @@ function App() {
     <div className="contenedor">
       <div class="navigation">
         <ul>
-          <li>
+          <li className= "top">
             <a href="#">
-              <span class="icon">
+              <span className="icon">
               </span>
-              <span class="title institucion"><b>CAEZ</b></span>
+              <span className="title institucion"><b>CAEZ</b></span>
             </a>
           </li>
 
@@ -97,10 +97,10 @@ function App() {
           {items.map((item, index) => (
             <li key={index}>
               <a href={item.link}>
-                <span class="icon">
+                <span className="icon">
                   {item.icon}
                 </span>
-                <span class="title">{item.text}</span>
+                <span className="title">{item.text}</span>
               </a>
             </li>
           ))}

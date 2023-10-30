@@ -1,0 +1,5 @@
+En esta carpeta, se colocan los archivos relacionados con servicios y lógica de negocio. Por ejemplo:
+
+api.js: Módulo para
+studentService.js: Servicios relacionados con estudiantes.
+paymentService.js: Servicios relacionados con pagos.

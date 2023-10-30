@@ -1,0 +1,1 @@
+esto se puede usar esta carpeta para alojar contextos de React que gestionen el estado global de la aplicación, como el contexto de autenticación ( AuthContext.js), y otros contextos relevantes.

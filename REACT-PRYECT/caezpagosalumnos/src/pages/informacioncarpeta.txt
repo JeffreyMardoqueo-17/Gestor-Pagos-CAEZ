@@ -1,0 +1,7 @@
+En esta carpeta, se debe de colocar componentes React que representan las vistas principales de tu aplicación. Cada archivo en esta carpeta generalmente corresponde a una página o vista específica de la aplicación. Por ejemplo:
+
+Home.js: Página de inicio de sesión.
+AdminPanel.js: Página del panel de administración.
+StudentPanel.js: Página del panel de estudiantes.
+Reports.js: Página de informes financieros.
+StudentDetails.js: Página de detalles del estudiante, y así sucesivamente.

@@ -1,0 +1,6 @@
+aqui se puede almacenar componentes reutilizables que se utilizan en múltiples partes de tu aplicación.
+
+Header.js: Componente de encabezado de la aplicación.
+StudentList.js: Componente de lista de estudiantes.
+PaymentForm.js: Componente para ingresar detalles de pago.
+Notification.js: Componente para mostrar notificaciones
