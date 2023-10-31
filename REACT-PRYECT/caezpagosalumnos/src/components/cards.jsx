@@ -3,14 +3,15 @@ import style from './cards.module.css'
 /**
  * Este es un componente card, el cual debera tener un diseo predeterminado con parametros especificos que se brindaran desde las etiquetas como las porps
  */
-export default function cards() {
+
+export const cards = (props) => {
     return (
         <div>
             <div className={style.CardsBox}>
                 <div className={style.card}>
                     <div>
-                        <div className={style.numbers}>1,504</div>
-                        <div class={style.cardName}>Daily Views</div>
+                        <div className={style.numbers}>{props.saldo}</div>
+                        <div class={style.cardName}>{props.titulo}</div>
                     </div>
                     <div className={style.iconBx}>
                         <ion-icon name="eye-outline"></ion-icon>

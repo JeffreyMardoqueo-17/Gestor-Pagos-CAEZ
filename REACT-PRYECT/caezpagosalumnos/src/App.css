@@ -184,7 +184,7 @@ body {
 
 /*-------HEAD---------*/
 .head {
-    background-color: var(--blue);
+    background-color: var(--bg-base);
     width: auto;
     height: 50px;
     color: #f5f5f5;
@@ -228,6 +228,7 @@ body {
         .head {
             border-bottom: 3px solid var(--border);
             text-align: left;
+            background-color: var(--blue);
         }
 
         .head h2 {
