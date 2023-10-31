@@ -7,7 +7,7 @@ import style from './cards.module.css'
 export const Cards = (props) => {
     return (
         <div>
-            <div className={style.CardsBox}>
+            <div className={style.CardBox}>
                 <div className={style.card}>
                     <div>
                         <div className={style.numbers}>{props.saldo}</div>

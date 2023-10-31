@@ -1,15 +1,21 @@
+:root{
+    --hover: #04041b;
+    --numero: #04041b;
+    --card: #ffff;
+    --gris: #484848;
+}
 .CardBox {
     position: relative;
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
 }
 
 .CardBox .card {
     position: relative;
-    background: var(--white);
+    background: var(--card);
     padding: 30px;
     border-radius: 20px;
     display: flex;
@@ -26,22 +32,24 @@
 }
 
 .CardBox .card .cardName {
-    color: var(--black2);
+    color: var(--gris);
     font-size: 1.1rem;
     margin-top: 5px;
+    font-weight: 600;
+    text-transform:capitalize;
 }
 
-CardBox .card .iconBx {
+.CardBox .card .iconBx {
     font-size: 3.5rem;
-    color: var(--black2);
+    color: var(--numero);
 }
 
-CardBox .card:hover {
+.CardBox .card:hover {
     background: var(--blue);
 }
-
-CardBox .card:hover .numbers,
-CardBox .card:hover .cardName,
-CardBox .card:hover .iconBx {
-    color: var(--white);
+.CardBox .card:hover .numbers,
+.CardBox .card:hover .cardName,
+.CardBox .card:hover .iconBx {
+    background-color: var(--hover);
+    color: var(--card);
 }
