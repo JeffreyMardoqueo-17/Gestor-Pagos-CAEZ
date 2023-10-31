@@ -212,7 +212,7 @@ body {
     background: var(--bg-base);
     /* Agrega una transición de 0.5 segundos para cambios en las propiedades del elemento. */
     transition: 0.5s;
-    background-color: #ffe100;
+    /* background-color: #ffe100; */
 }
 /* Estilo para la clase 'active' de '.Contenido' que se aplica en ciertas condiciones. */
 .Contenido.active {

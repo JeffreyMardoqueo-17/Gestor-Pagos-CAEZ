@@ -1,9 +1,11 @@
-:root{
+:root {
     --hover: #04041b;
     --numero: #04041b;
     --card: #ffff;
     --gris: #484848;
+    --border: #ffe100;
 }
+
 .CardBox {
     position: relative;
     width: 100%;
@@ -21,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.83) 0px 5px 15px;
 }
 
 .CardBox .card .numbers {
@@ -36,7 +38,7 @@
     font-size: 1.1rem;
     margin-top: 5px;
     font-weight: 600;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
 
 .CardBox .card .iconBx {
@@ -46,10 +48,42 @@
 
 .CardBox .card:hover {
     background: var(--blue);
+    border: 2px solid var(--border);
 }
+
 .CardBox .card:hover .numbers,
 .CardBox .card:hover .cardName,
 .CardBox .card:hover .iconBx {
     background-color: var(--hover);
     color: var(--card);
+}
+
+@media (max-width: 800px) {
+    .cardBox {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .recentOrders {
+        overflow-x: auto;
+    }
+
+    .status.inProgress {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardHeader h2 {
+        font-size: 20px;
+    }
 }
