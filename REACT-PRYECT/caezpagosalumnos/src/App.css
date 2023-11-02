@@ -72,12 +72,10 @@ body {
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
 }
-
 /*INSTITUCION*/
 .institucion {
     font-size: 40px;
 }
-
 .top {
     height: 80px;
     /* background-color: rebeccapurple; */
@@ -85,11 +83,9 @@ body {
     text-align: center;
     align-content: center;
 }
-
 .navigation.active {
     width: 80px;
 }
-
 /*===========================tITULO ===============*/
 .navigation ul {
     position: absolute;
@@ -111,7 +107,6 @@ body {
 .navigation ul li.hovered {
     background-color: var(--bg-base);
 }
-
 .navigation ul li:nth-child(1) {
     margin-bottom: 40px;
     pointer-events: none;
@@ -129,7 +124,6 @@ body {
     color: var(--white);
 
 }
-
 .navigation ul li a .icon {
     position: relative;
     display: block;
@@ -138,11 +132,9 @@ body {
     line-height: 75px;
     text-align: center;
 }
-
 .navigation ul li a .icon ion-icon {
     font-size: 1.75rem;
 }
-
 .navigation ul li a .title {
     position: relative;
     display: block;
@@ -152,7 +144,6 @@ body {
     text-align: start;
     white-space: nowrap;
 }
-
 /* --------- curve outside ---------- */
 .navigation ul li:hover a::before,
 .navigation ul li.hovered a::before {
@@ -168,7 +159,6 @@ body {
     pointer-events: none;
     
 }
-
 .navigation ul li:hover a::after,
 .navigation ul li.hovered a::after {
     content: "";
@@ -182,13 +172,11 @@ body {
     box-shadow: 35px -35px 0 10px var(--bg-base);
     pointer-events: none;
 }
-
 /*Para que cambie de color el icono*/
 .navigation ul li:hover a .icon ,
 .navigation ul li.hovered a .icon  {
-    color: var(--border);
+    color: var(--blue);
 }
-
 /*-------HEAD---------*/
 .head {
     background-color: var(--bg-base);
