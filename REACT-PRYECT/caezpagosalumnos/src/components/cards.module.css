@@ -70,7 +70,6 @@
     .details {
         grid-template-columns: 1fr;
     }
-
     .recentOrders {
         overflow-x: auto;
     }
