@@ -97,7 +97,6 @@ body {
     left: 0;
     width: 100%;
 }
-
 .navigation ul li {
     position: relative;
     width: 100%;
@@ -105,7 +104,9 @@ body {
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-
+.navigation ul li a .title{
+    text-transform: capitalize;
+}
 .navigation ul li:hover,
 .navigation ul li.hovered {
     background-color: var(--bg-base);
@@ -115,7 +116,6 @@ body {
     margin-bottom: 40px;
     pointer-events: none;
 }
-
 .navigation ul li a {
     position: relative;
     display: block;
@@ -124,7 +124,6 @@ body {
     text-decoration: none;
     color: var(--white);
 }
-
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
     color: var(--white);
@@ -182,6 +181,12 @@ body {
     border-radius: 50%;
     box-shadow: 35px -35px 0 10px var(--bg-base);
     pointer-events: none;
+}
+
+/*Para que cambie de color el icono*/
+.navigation ul li:hover a .icon ,
+.navigation ul li.hovered a .icon  {
+    color: var(--border);
 }
 
 /*-------HEAD---------*/
