@@ -11,3 +11,6 @@ export default function home() {
         </div>
     )
 }
+
+
+//cosas que no se que son
