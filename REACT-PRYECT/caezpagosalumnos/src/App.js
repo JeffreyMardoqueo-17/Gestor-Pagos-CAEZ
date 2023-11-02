@@ -109,7 +109,6 @@ function App() {
       </div>
       <div className='head'>
         <h2>Buscador</h2>
-        <Home></Home>
       </div>
       <div className='Contenido'>
         <Home></Home>
