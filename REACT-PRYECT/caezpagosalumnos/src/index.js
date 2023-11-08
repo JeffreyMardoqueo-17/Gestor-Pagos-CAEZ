@@ -8,8 +8,8 @@ import {Table} from './components/Table.jsx'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Table></Table>
+    <App />
+    {/* <Table></Table> */}
   </React.StrictMode>
 );
 

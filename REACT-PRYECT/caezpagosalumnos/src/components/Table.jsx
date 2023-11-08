@@ -11,26 +11,10 @@ export const Table = () => {
                     <h2>Recent Orders</h2>
                     <a href="#" class="btn">View All</a>
                 </div>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Nombre</td>
-                            <td>Grado</td>
-                            <td>Payment</td>
-                            <td>Status</td>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Star Refrigerator</td>
-                            <td>$1200</td>
-                            <td>Paid</td>
-                            <td><span class="status delivered">Delivered</span></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <form>
+                    <input type='text' name='buscador' autoComplete='off'></input>
+                    <button type='submit'></button>
+                </form>
             </div>
         </div>
     )
