@@ -82,6 +82,14 @@ function App() {
       </span>
     }
   ]
+
+  //esto es para que aparezca el menu
+    const [menu, setMenu] = useState(false)
+
+    const toggleMenu = () => {
+        setMenu(!menu)
+    }
+    //return content
   return (
     <div className="contenedor">
       <div className="navigation">
