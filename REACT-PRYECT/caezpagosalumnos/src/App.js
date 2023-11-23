@@ -82,17 +82,9 @@ function App() {
       </span>
     }
   ]
-
-  //esto es para que aparezca el menu
-    const [menu, setMenu] = useState(false)
-
-    const toggleMenu = () => {
-        setMenu(!menu)
-    }
-    //return content
   return (
     <div className="contenedor">
-      <div className="navigation">
+      <div class="navigation">
         <ul>
           <li className= "top">
             <a href="#">
@@ -117,12 +109,6 @@ function App() {
       </div>
       <div className='head'>
         <h2>Buscador</h2>
-        {/* Agregar el icono del menú para pantallas más pequeñas */}
-        <div className="menu-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-            <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-          </svg>
-        </div>
       </div>
       <div className='Contenido'>
         <Home></Home>

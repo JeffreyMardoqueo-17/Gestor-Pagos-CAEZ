@@ -49,9 +49,12 @@
 
 .CardBox .card:hover {
     background: var(--blue);
-    border: 2px solid var(--border);
+    border: 1px solid var(--border);
     /* transition: 0.1s; */
 }
+
+
+/* Otros estilos para tu componente Cards, CardBox, etc. */
 
 .CardBox .card:hover .numbers,
 .CardBox .card:hover .cardName,
