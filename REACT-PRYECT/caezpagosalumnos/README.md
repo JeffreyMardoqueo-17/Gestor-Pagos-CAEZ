@@ -70,4 +70,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ### CREACION DE LA APP MOD RESPONSIE
-ammm pues no se como hacer que sea responsive pero lo haremos
+ammm pues no se como hacer que sea responsive pero lo haremod
+
+
+En la parte del menu, aqui hacemos un mapeo de l aparte de los datos, que se guradaran en un arreglo 
+el cual servira para que se puedan guardar mas datos en caso de querer extender la parte del menu
