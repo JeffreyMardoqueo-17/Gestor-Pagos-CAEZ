@@ -108,7 +108,7 @@ function App() {
           ))}
         </ul>
       </div>
-      <div cassName='head'>
+      <div cassName='cabecera'>
         <Buscador />
       </div>
       <div className='Contenido'>

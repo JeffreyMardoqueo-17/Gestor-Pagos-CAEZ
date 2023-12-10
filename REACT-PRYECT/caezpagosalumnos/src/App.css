@@ -342,11 +342,9 @@ body {
     }
 }
 
-/* ... tu código existente ... */
-
-
-.head {
-    background-color: var(--bg-base);
+.cabecera {
+    /* background-color: var(--bg-base); */
+    background-color: red;
     width: auto;
     height: 50px;
     color: #f5f5f5;
@@ -355,11 +353,13 @@ body {
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     /* border-bottom: 2px solid var(--border); */
-    /* ESTA LA APLICO CUANDO SE HAGA PARA DISPOSITOVO */
+    /* ESTA LA APLICO CUANDO SE HAGA PARA DISPOSITIVO */
 }
 
+
 .Contenido {
-    background-color: var(--bg-base);
+    /* background-color: var(--bg-base); */
+    background-color: blue;
     width: auto;
     height: 50px;
     color: #f5f5f5;
