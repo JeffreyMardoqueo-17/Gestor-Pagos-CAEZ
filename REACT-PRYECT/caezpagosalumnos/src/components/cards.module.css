@@ -76,7 +76,6 @@
     .recentOrders {
         overflow-x: auto;
     }
-
     .status.inProgress {
         white-space: nowrap;
     }
@@ -86,7 +85,6 @@
     .cardBox {
         grid-template-columns: repeat(1, 1fr);
     }
-
     .cardHeader h2 {
         font-size: 20px;
     }

@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home';
+import { Route, Router,Routes  } from 'react-router';
 
 function App() {
   //arreglo con todos los linkks
@@ -84,6 +85,11 @@ function App() {
   ]
   return (
     <div className="contenedor">
+      <Router>
+        <Routes>
+          <Route path='/' element={Home}></Route>
+        </Routes>
+      </Router>
       <div class="navigation">
         <ul>
           <li className= "top">
