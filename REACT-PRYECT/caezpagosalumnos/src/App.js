@@ -86,7 +86,7 @@ function App() {
     <div className="contenedor">
       <div class="navigation">
         <ul>
-          <li className= "top">
+          <li className="top">
             <a href="#">
               <span className="icon">
               </span>
@@ -107,8 +107,13 @@ function App() {
           ))}
         </ul>
       </div>
-      <div className='head'>
-        <h2>Buscador</h2>
+      <div cassName='head'>
+        <div class="search">
+          <label>
+            <input type="text" placeholder="Search here" /> 
+              <ion-icon name="search-outline"></ion-icon>
+          </label>
+        </div>
       </div>
       <div className='Contenido'>
         <Home></Home>
