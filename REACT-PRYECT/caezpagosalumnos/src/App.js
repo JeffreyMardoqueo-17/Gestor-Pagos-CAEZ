@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home';
+import Buscador from './components/Buscador';
 
 function App() {
   //arreglo con todos los linkks
@@ -108,12 +109,7 @@ function App() {
         </ul>
       </div>
       <div cassName='head'>
-        <div class="search">
-          <label>
-            <input type="text" placeholder="Search here" /> 
-              <ion-icon name="search-outline"></ion-icon>
-          </label>
-        </div>
+        <Buscador />
       </div>
       <div className='Contenido'>
         <Home></Home>
