@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Home.module.css'
-import { Cards } from '../components/cards'
+import { Cards } from '../components/cards';
+import { Table } from '../components/Table';
 export default function home() {
     return (
         <div className={style.Home}>
@@ -14,14 +15,7 @@ export default function home() {
                     <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
                 </svg>
             ></Cards>
-
-            <Cards
-                saldo={50}
-                titulo="Pendientes">
-            </Cards>
-            <Cards saldo={75}
-                titulo="Pagados">
-            </Cards>
+            <Table />
         </div>
     )
 }

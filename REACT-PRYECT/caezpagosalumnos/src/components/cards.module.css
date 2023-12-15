@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --hover: #04041b;
     --numero: #04041b;
     --card: #ffff;
@@ -51,12 +51,12 @@
     background: var(--blue);
     border: 1px solid var(--border);
     /* transition: 0.1s; */
-}
+/* } */
 
 
 /* Otros estilos para tu componente Cards, CardBox, etc. */
 
-.CardBox .card:hover .numbers,
+/* .CardBox .card:hover .numbers,
 .CardBox .card:hover .cardName,
 .CardBox .card:hover .iconBx {
     background-color: var(--hover);
@@ -88,4 +88,56 @@
     .cardHeader h2 {
         font-size: 20px;
     }
+/* } */
+
+/* ======================= Cards ====================== */
+.cardBox {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.cardBox .card {
+    width: 200px;
+    position: relative;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border: 2px solid var(--border);
+}
+
+.cardBox .card .numbers {
+    position: relative;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.cardBox .card .cardName {
+    color: var(--blue);
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+    font-size: 3.5rem;
+    color: var(--black2);
+}
+
+.cardBox .card:hover {
+    background: var(--blue);
+    border: 2px solid var(--border);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+    color: var(--white);
 }
