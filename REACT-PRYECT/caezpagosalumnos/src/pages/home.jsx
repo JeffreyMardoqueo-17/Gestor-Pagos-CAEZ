@@ -6,7 +6,7 @@ import RegistroAlumno from '../components/RegistroAlumno';
 export default function home() {
     return (
         <div className={style.Home}>
-            {/* <Cards
+            <Cards
                 saldo={10010}
                 titulo="saldo"
                 icono= <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
@@ -16,8 +16,8 @@ export default function home() {
                     <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
                 </svg>
             ></Cards>
-            <Table /> */}
-            <RegistroAlumno></RegistroAlumno>
+            <Table />
+            
         </div>
     )
 }
