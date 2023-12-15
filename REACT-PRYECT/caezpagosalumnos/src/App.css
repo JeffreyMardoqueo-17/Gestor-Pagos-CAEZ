@@ -14,20 +14,14 @@
     --gray: #f5f5f5;
     --black1: #222;
     --black2: #999;
-    --bg-base: #5b5a82;
+    --bg-base: #43416d;
     --border: #ffe100;
-}
-
-body {
-    min-height: 100%;
-    overflow-x: hidden;
-    /* background-color: var(--bg-base); */
-    background-color: red;
 }
 
 .contenedor {
     position: relative;
     width: 100%;
+    background-color: var(--bg-base);
 }
 
 /* =============== Navigation ================ */
@@ -144,13 +138,23 @@ body {
 
 
 
-.user img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* ////MAIIIIIN */
+.main {
+    position: relative;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: transparent;
+    transition: 0.5s;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.main.active {
+    width: calc(100% - 300px);
+    left: 300px;
 }
 
 /*======SECCION PARA HACERLO ADAPTABLE===*/
@@ -217,9 +221,11 @@ body {
         width: 100%;
         left: 0;
     }
+
     .toggle {
         z-index: 10001;
     }
+
     .main.active .toggle {
         color: #fff;
         position: fixed;
@@ -228,35 +234,6 @@ body {
     }
 }
 
-.Contenido {
-    grid-area: contenido;
-    /* Posiciona el elemento de manera absoluta dentro de su contenedor. */
-    position: absolute;
-    /* Establece el ancho del elemento restando 300px al 100% del ancho del contenedor. */
-    width: calc(100% - 300px);
-    /* Desplaza el elemento hacia la derecha 300px desde el borde izquierdo del contenedor. */
-    left: 300px;
-    /* Establece una altura mínima del 100% del alto del viewport. */
-    min-height: 100vh;
-    /* Establece un fondo con el valor de una variable CSS llamada '--bg-base'. */
-    background: var(--bg-base);
-    /* Agrega una transición de 0.5 segundos para cambios en las propiedades del elemento. */
-    transition: 0.5s;
-    /* background-color: #ffe100; */
-}
-
-/* Estilo para la clase 'active' de '.Contenido' que se aplica en ciertas condiciones. */
-.Contenido.active {
-
-    /* Cuando la clase 'active' está presente, cambia el ancho del elemento. */
-    width: calc(100% - 80px);
-    /* Cuando la clase 'active' está presente, desplaza el elemento a 80px desde el borde izquierdo. */
-    left: 80px;
-}
-
-/*======SECCION PARA HACERLO ADAPTABLE===*/
-
-/* ====================== Responsive Design ========================== */
 @media (max-width: 800px) {
     .head {
         border-bottom: 3px solid var(--border);
@@ -341,33 +318,6 @@ body {
     }
 }
 
-.cabecera {
-    /* background-color: var(--bg-base); */
-    width: auto;
-    height: 50px;
-    color: #f5f5f5;
-    text-align: center;
-    padding: 10px;
-    margin-right: 20px;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
-    /* border-bottom: 2px solid var(--border); */
-    /* ESTA LA APLICO CUANDO SE HAGA PARA DISPOSITIVO */
-}
-
-
-.Contenido {
-    /* background-color: var(--bg-base); */
-    /* background-color: blue; */
-    width: auto;
-    height: 50px;
-    /* color: #f5f5f5; */
-    text-align: center;
-    padding: 10px;
-    margin-right: 20px;
-    /* border-bottom: 2px solid var(--border); */
-    /* ESTA LA APLICO CUANDO SE HAGA PARA DISPOSITOVO */
-}
 
 /* Agrega estilos específicos para pantallas más pequeñas */
 @media (max-width: 800px) {

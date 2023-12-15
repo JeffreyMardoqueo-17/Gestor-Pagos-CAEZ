@@ -108,11 +108,8 @@ function App() {
           ))}
         </ul>
       </div>
-      <div cassName='cabecera'>
-        <Buscador />
-      </div>
-      <div className='Contenido'>
-        <Home></Home>
+      <div className='main'>
+
       </div>
     </div>
     //PARTE DONDE ESTARA TODAS LAS PAGINAS DE ADENTRO
