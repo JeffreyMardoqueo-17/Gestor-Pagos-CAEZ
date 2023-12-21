@@ -18,6 +18,7 @@
     cursor: pointer;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border: 2px solid var(--border);
+    margin-top: 50px;
 }
 
 .cardBox .card .numbers {

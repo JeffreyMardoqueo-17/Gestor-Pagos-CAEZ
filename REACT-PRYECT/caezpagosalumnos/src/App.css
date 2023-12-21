@@ -151,7 +151,6 @@
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
 .main.active {
     width: calc(100% - 300px);
     left: 300px;

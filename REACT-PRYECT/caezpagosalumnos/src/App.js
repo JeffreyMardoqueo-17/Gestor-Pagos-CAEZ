@@ -109,9 +109,7 @@ function App() {
         </ul>
       </div>
       <div className='main'>
-        <div className='buscador'>
-           <Buscador />
-        </div>
+        <Buscador />
         <Home />
       </div>
     </div>

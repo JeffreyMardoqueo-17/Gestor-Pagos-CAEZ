@@ -1,7 +1,7 @@
 /* ================== Order Details List ============== */
 .details {
     position: relative;
-    width: 1000px;
+    width: 100%;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr;
@@ -55,7 +55,7 @@
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .details table thead td {
