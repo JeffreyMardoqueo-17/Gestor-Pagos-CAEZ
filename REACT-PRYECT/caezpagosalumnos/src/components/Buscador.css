@@ -1,5 +1,5 @@
 .topbar {
-     width: calc(100% - 270px);
+    width: calc(100% - 270px);
     left: 270px;
     height: 60px;
     display: flex;
@@ -72,4 +72,42 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* @media queries para hacer ajustes en dispositivos más pequeños */
+@media (max-width: 768px) {
+    .topbar {
+        width: 100%;
+        /* Cambiado a 100% para que sea adaptable */
+        left: 0;
+        /* Cambiado a 0 para ocupar toda la pantalla en dispositivos pequeños */
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        z-index: 100;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background: var(--blue);
+        box-sizing: border-box;
+        position: fixed;
+        margin-bottom: 500px;
+    }
+
+    .toggle {
+        font-size: 2rem;
+        /* Ajusta el tamaño del icono del menú para dispositivos más pequeños */
+    }
+
+    .search {
+        width: 200px;
+        /* Ajusta el ancho del campo de búsqueda para dispositivos más pequeños */
+        margin: 0 5px;
+    }
+
+    .search label input {
+        font-size: 16px;
+        /* Ajusta el tamaño de la fuente del campo de búsqueda para dispositivos más pequeños */
+    }
 }

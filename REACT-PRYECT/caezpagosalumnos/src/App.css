@@ -58,6 +58,7 @@
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    text-transform: capitalize;
 }
 
 .navigation ul li:hover,
