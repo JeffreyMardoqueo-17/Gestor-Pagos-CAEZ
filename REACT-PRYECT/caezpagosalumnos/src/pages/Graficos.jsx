@@ -13,7 +13,7 @@ import PiesChart from "../components/Graficos/PiesChart";
 
 const Graficos = () => {
     return (
-        <div>
+        <div className={Graficos}>
             {/* Aquí incluiré las gráficas (un componente por cada ejemplo). */}
             <h1 className="bg-info text-center font-monospace fw-bold lh-base">Gráficas ChartJS</h1>
             <div>
