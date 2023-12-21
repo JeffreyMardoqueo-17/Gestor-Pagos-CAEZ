@@ -6,17 +6,7 @@ import style from '../components/Table.module.css'
 export const Table = () => {
     return (
         <div className='Table-Container'>
-            {/* <div class="recentOrders">
-                <div class="cardHeader">
-                    <h2>Recent Orders</h2>
-                    <a href="#" class="btn">View All</a>
-                </div>
-                <form>
-                    <input type='text' name='buscador' autoComplete='off'></input>
-                    <button type='submit'></button>
-                </form>
-            </div> */}
-            {/* <!-- ================ Order Details List ================= --> */}
+           {/* <!-- ================ Order Details List ================= --> */}
             <div className={style.details}>
                 <div className={style.recentOrders}>
                     <div className={style.cardHeader}>
@@ -31,6 +21,7 @@ export const Table = () => {
                                 <td>Nie</td>
                                 <td>Meses pendientes</td>
                                 <td>Grado</td>
+                                <td>Estado</td>
                             </tr>
                         </thead>
 
@@ -39,32 +30,73 @@ export const Table = () => {
                                 <td>Jeffrey Mardoqueo Jimenez Santos</td>
                                 <td>2345678</td>
                                 <td>1</td>
-                                <td><span className={style.status}>9° GRADO</span></td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
                             </tr>
                               <tr>
                                 <td>Jeffrey Mardoqueo Jimenez Santos</td>
                                 <td>2345678</td>
                                 <td>1</td>
-                                <td><span className={style.status}>9° GRADO</span></td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
                             </tr>
                               <tr>
                                 <td>Jeffrey Mardoqueo Jimenez Santos</td>
                                 <td>2345678</td>
                                 <td>1</td>
-                                <td><span className={style.status}>9° GRADO</span></td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
                             </tr>
                               <tr>
                                 <td>Jeffrey Mardoqueo Jimenez Santos</td>
                                 <td>2345678</td>
                                 <td>1</td>
-                                <td><span className={style.status}>9° GRADO</span></td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
                             </tr>
                               <tr>
                                 <td>Jeffrey Mardoqueo Jimenez Santos</td>
                                 <td>2345678</td>
                                 <td>1</td>
-                                <td><span className={style.status}>9° GRADO</span></td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
                             </tr>
+                              <tr>
+                                <td>Jeffrey Mardoqueo Jimenez Santos</td>
+                                <td>2345678</td>
+                                <td>1</td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
+                            </tr>
+                              <tr>
+                                <td>Jeffrey Mardoqueo Jimenez Santos</td>
+                                <td>2345678</td>
+                                <td>1</td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
+                            </tr>
+                              <tr>
+                                <td>Jeffrey Mardoqueo Jimenez Santos</td>
+                                <td>2345678</td>
+                                <td>1</td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
+                            </tr>
+                              <tr>
+                                <td>Jeffrey Mardoqueo Jimenez Santos</td>
+                                <td>2345678</td>
+                                <td>1</td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
+                            </tr>
+                              <tr>
+                                <td>Jeffrey Mardoqueo Jimenez Santos</td>
+                                <td>2345678</td>
+                                <td>1</td>
+                                <td>9°</td>
+                                <td><span className={style.status}>Saldado</span></td>
+                            </tr>
+                            
                              {/* //borrar desde aqui */}
                         </tbody>
                     </table>

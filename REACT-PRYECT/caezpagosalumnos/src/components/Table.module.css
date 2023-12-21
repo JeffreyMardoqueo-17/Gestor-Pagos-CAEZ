@@ -30,6 +30,7 @@
     font-weight: 600;
     color: var(--blue);
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .cardHeader .btn {
@@ -48,19 +49,24 @@
     color: var(--blue);
     border: 1px solid var(--blue);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
 }
 .details table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+     cursor: pointer;
 }
 
 .details table thead td {
     font-weight: 600;
+    text-transform:capitalize;
+    border-bottom: 1px solid var(--blue);
+    cursor:auto;
 }
 
 .details .recentOrders table tr {
-    color: var(--black1);
+    color: var(--blue);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 

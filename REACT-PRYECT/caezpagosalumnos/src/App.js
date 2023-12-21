@@ -109,7 +109,8 @@ function App() {
         </ul>
       </div>
       <div className='main'>
-
+        <Buscador />
+        <Home />
       </div>
     </div>
     //PARTE DONDE ESTARA TODAS LAS PAGINAS DE ADENTRO
