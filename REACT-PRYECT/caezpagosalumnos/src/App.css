@@ -141,8 +141,8 @@
 /* ////MAIIIIIN */
 .main {
     position: relative;
-    width: calc(100% - 300px);
-    left: 300px;
+    width: calc(100% - 270px);
+    left: 270px;
     min-height: 100vh;
     background: transparent;
     transition: 0.5s;
@@ -156,7 +156,9 @@
     width: calc(100% - 300px);
     left: 300px;
 }
-
+.buscador{
+    background-color: red;
+}
 /*======SECCION PARA HACERLO ADAPTABLE===*/
 
 /* ====================== Responsive Design ========================== */

@@ -10,7 +10,8 @@
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     background: var(--blue);
-    /* margin-left: 290px; */
+    box-sizing: border-box;
+    position: fixed;
 }
 
 .toggle {
