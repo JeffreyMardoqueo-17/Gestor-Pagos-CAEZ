@@ -1,5 +1,6 @@
 .topbar {
-    width: 76%;
+     width: calc(100% - 270px);
+    left: 270px;
     height: 60px;
     display: flex;
     justify-content: space-between;
