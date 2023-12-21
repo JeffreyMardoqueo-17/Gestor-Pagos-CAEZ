@@ -28,7 +28,7 @@ export const Cards = (props) => {
             <div className={style.cardBox}>
                 <div className={style.card}>
                     <div>
-                        <div className={style.numbers}>1,504</div>
+                        <div className={style.numbers}>$400</div>
                         <div className={style.cardName}>Total Deudas</div>
                     </div>
 

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Home from './pages/home';
 import Buscador from './components/Buscador';
+import Graficos from './pages/Graficos';
 
 function App() {
   //arreglo con todos los linkks
@@ -111,6 +112,7 @@ function App() {
       <div className='main'>
         <Buscador />
         <Home />
+        <Graficos />
       </div>
     </div>
     //PARTE DONDE ESTARA TODAS LAS PAGINAS DE ADENTRO

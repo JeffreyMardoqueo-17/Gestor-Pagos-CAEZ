@@ -30,7 +30,7 @@
 
 .search {
     position: relative;
-    width: 400px;
+    width: 600px;
     margin: 0 10px;
 }
 
@@ -78,10 +78,8 @@
 /* @media queries para hacer ajustes en dispositivos más pequeños */
 @media (max-width < 400px) {
     .topbar {
-        width: 100%;
-        /* Cambiado a 100% para que sea adaptable */
+        width: 100%;    
         left: 0;
-        /* Cambiado a 0 para ocupar toda la pantalla en dispositivos pequeños */
         height: 60px;
         display: flex;
         justify-content: space-between;
