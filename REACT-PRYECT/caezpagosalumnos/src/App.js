@@ -86,7 +86,7 @@ function App() {
   ]
   return (
     <div className="contenedor">
-      <div class="navigation">
+      <div className="navigation">
         <ul>
           <li className="top">
             <a href="#">
