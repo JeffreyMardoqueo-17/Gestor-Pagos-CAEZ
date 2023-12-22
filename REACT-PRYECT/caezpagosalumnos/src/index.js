@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Table} from './components/Table.jsx'
+import Menu from './components/Menu.jsx'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    {/* <Menu /> */}
     <App />
     {/* <Table></Table> */}
   </React.StrictMode>

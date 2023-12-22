@@ -1,5 +1,7 @@
 import React from 'react';
 import '../components/Buscador.css'
+//icono de busqueda
+import { FaSearch } from "react-icons/fa";
 const Buscador = () => {
     return (
         <div className="topbar">

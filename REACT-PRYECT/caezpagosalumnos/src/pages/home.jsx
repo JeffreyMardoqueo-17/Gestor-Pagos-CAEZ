@@ -3,6 +3,7 @@ import style from './Home.module.css'
 import { Cards } from '../components/cards';
 import { Table } from '../components/Table';
 import RegistroAlumno from '../components/RegistroAlumno';
+import Graficos from './Graficos'
 export default function home() {
     return (
         <div className={style.Home}>
@@ -16,6 +17,7 @@ export default function home() {
                     <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z" />
                 </svg>
             ></Cards>
+            <Graficos />
             <Table />
             
         </div>

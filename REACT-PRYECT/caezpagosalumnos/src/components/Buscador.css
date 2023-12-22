@@ -1,7 +1,8 @@
 .topbar {
     /* width: calc(100% - 270px);
     left: 270px; */
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% - 290px);
     height: 60px;
     display: flex;
     justify-content: space-between;

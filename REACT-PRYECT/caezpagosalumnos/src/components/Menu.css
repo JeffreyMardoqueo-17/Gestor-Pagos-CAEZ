@@ -1,28 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-
-/* =============== Globals ============== */
-* {
-    font-family: "Ubuntu", sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --blue: #04041b;
-    --white: #fff;
-    --gray: #f5f5f5;
-    --black1: #222;
-    --color2: #4d51b3;
-    /* --bg-base: #43416d; */
-    --bg-base: #f9f9f9;
-    --border: #ffe100;
-}
-
-.contenedor {
-    position: relative;
+.container {
+    /* position: relative; */
     width: 100%;
-    background-color: var(--bg-base);
 }
 
 /* =============== Navigation ================ */
@@ -36,16 +14,10 @@
     overflow: hidden;
 }
 
-/*INSTITUCION*/
-.institucion {
-    font-size: 40px;
-}
-
 .navigation.active {
     width: 80px;
 }
 
-/*===========================tITULO ===============*/
 .navigation ul {
     position: absolute;
     top: 0;
@@ -59,12 +31,11 @@
     list-style: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
-    text-transform: capitalize;
 }
 
 .navigation ul li:hover,
 .navigation ul li.hovered {
-    background-color: var(--bg-base);
+    background-color: var(--white);
 }
 
 .navigation ul li:nth-child(1) {
@@ -83,8 +54,7 @@
 
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
-    color: var(--color2);
-    font-weight: bold;
+    color: var(--blue);
 }
 
 .navigation ul li a .icon {
@@ -121,7 +91,7 @@
     height: 50px;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 35px 35px 0 10px var(--bg-base);
+    box-shadow: 35px 35px 0 10px var(--white);
     pointer-events: none;
 }
 
@@ -135,25 +105,11 @@
     height: 50px;
     background-color: transparent;
     border-radius: 50%;
-    box-shadow: 35px -35px 0 10px var(--bg-base);
+    box-shadow: 35px -35px 0 10px var(--white);
     pointer-events: none;
 }
 
 
-
-/* ////MAIIIIIN */
-.main {
-    position: relative;
-    width: calc(100% - 290px);
-    left: 290px;
-    min-height: 100vh;
-    background: transparent;
-    transition: 0.5s;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
 /* ====================== Responsive Design ========================== */
 @media (max-width: 991px) {
     .navigation {
@@ -164,49 +120,34 @@
         width: 300px;
         left: 0;
     }
+}
 
-    .main {
-        width: 100%;
-        left: 0;
-    }
-
-    .main.active {
-        left: 300px;
-    }
-
-    .cardBox {
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 768px) {
+    .status.inProgress {
+        white-space: nowrap;
     }
 }
 
-
-
-
-/* Agrega estilos específicos para pantallas más pequeñas */
-@media (max-width: 800px) {
-    .head {
-        position: relative;
-        top: 0;
-        left: 0;
+@media (max-width: 480px) {
+    .navigation {
         width: 100%;
+        left: -100%;
         z-index: 1000;
-        text-align: right;
-        padding: 10px;
     }
 
-    .Contenido {
-        position: relative;
-        top: 0;
-        left: 0;
+    .navigation.active {
         width: 100%;
-        z-index: 1000;
-        text-align: right;
-        padding: 10px;
+        left: 0;
     }
 
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        /* Agrega cualquier otro estilo necesario para el icono del menú */
+    .toggle {
+        z-index: 10001;
+    }
+
+    .main.active .toggle {
+        color: #fff;
+        position: fixed;
+        right: 0;
+        left: initial;
     }
 }
