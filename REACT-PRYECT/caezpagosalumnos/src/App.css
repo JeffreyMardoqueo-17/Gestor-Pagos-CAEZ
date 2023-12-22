@@ -13,8 +13,9 @@
     --white: #fff;
     --gray: #f5f5f5;
     --black1: #222;
-    --black2: #999;
-    --bg-base: #43416d;
+    --color2: #4d51b3;
+    /* --bg-base: #43416d; */
+    --bg-base: #f9f9f9;
     --border: #ffe100;
 }
 
@@ -82,7 +83,8 @@
 
 .navigation ul li:hover a,
 .navigation ul li.hovered a {
-    color: var(--white);
+    color: var(--color2);
+    font-weight: bold;
 }
 
 .navigation ul li a .icon {

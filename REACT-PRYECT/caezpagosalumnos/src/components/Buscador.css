@@ -55,6 +55,8 @@
     top: 0;
     left: 10px;
     font-size: 1.2rem;
+    align-items: left;
+    align-content: left;
 }
 
 .user {

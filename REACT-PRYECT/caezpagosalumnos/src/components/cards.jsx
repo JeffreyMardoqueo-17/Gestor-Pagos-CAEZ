@@ -1,9 +1,17 @@
 import React from 'react'
 import style from './cards.module.css'
+//usaurios
+import { FaUsers } from "react-icons/fa6";
+//deudas
+import { GiTakeMyMoney } from "react-icons/gi";
+//deudores
+import { FaUserClock } from "react-icons/fa";
+//money
+import { GiMoneyStack } from "react-icons/gi";
 /**
  * Este es un componente card, el cual debera tener un diseo predeterminado con parametros especificos que se brindaran desde las etiquetas como las porps
  */
-
+import 'react-icons'
 export const Cards = (props) => {
     const iconStyle = {
         backgroundColor: 'blue',
@@ -12,19 +20,6 @@ export const Cards = (props) => {
 
     return (
         <div>
-            {/* <div classNameName={style.CardBox}>
-                <div className={style.card}>
-                    <div>
-                        <div className={style.numbers}>{props.saldo}</div>
-                        <div className={style.cardName}>{props.titulo}</div>
-                    </div>
-                    <div className={style.iconBx} style={iconStyle}>
-                        <div className="icono" style={{ height: '100px', width: '200px' }}>
-                            {props.icono}
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className={style.cardBox}>
                 <div className={style.card}>
                     <div>
@@ -33,7 +28,7 @@ export const Cards = (props) => {
                     </div>
 
                     <div className={style.iconBx}>
-                        <ion-icon name="eye-outline"></ion-icon>
+                        <GiTakeMyMoney/>
                     </div>
                 </div>
 
@@ -44,7 +39,7 @@ export const Cards = (props) => {
                     </div>
 
                     <div className={style.iconBx}>
-                        <ion-icon name="cart-outline"></ion-icon>
+                        <FaUserClock />
                     </div>
                 </div>
 
@@ -55,7 +50,7 @@ export const Cards = (props) => {
                     </div>
 
                     <div className={style.iconBx}>
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <FaUsers/>
                     </div>
                 </div>
 
@@ -66,7 +61,7 @@ export const Cards = (props) => {
                     </div>
 
                     <div className={style.iconBx}>
-                        <ion-icon name="cash-outline"></ion-icon>
+                        <GiMoneyStack />
                     </div>
                 </div>
             </div>
