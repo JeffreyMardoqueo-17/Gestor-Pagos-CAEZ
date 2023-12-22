@@ -12,7 +12,7 @@ const Buscador = () => {
             <div className="search">
                 <label>
                     <input type="text" placeholder="Buscar Alumno" />
-                        <ion-icon name="search-outline"></ion-icon>
+                    <FaSearch className='icon' />
                 </label>
             </div>
 

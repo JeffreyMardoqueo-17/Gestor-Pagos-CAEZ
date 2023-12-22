@@ -1,8 +1,8 @@
 .topbar {
     /* width: calc(100% - 270px);
     left: 270px; */
-    /* width: 100%; */
-    width: calc(100% - 290px);
+    width: 100%;
+    /* width: calc(100% - 290px); */
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -51,13 +51,14 @@
     border: 1px solid var(--black2);
 }
 
-.search label ion-icon {
+.search label .icon {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 10px;
     font-size: 1.2rem;
     align-items: left;
     align-content: left;
+    color: var(--color2);
 }
 
 .user {
@@ -79,7 +80,7 @@
 }
 
 /* @media queries para hacer ajustes en dispositivos más pequeños */
-@media (max-width < 400px) {
+@media (max-width < 600px) {
     .topbar {
         width: 100%;    
         left: 0;
@@ -111,5 +112,10 @@
     .search label input {
         font-size: 16px;
         /* Ajusta el tamaño de la fuente del campo de búsqueda para dispositivos más pequeños */
+    }
+}
+@media (width > 600px){
+    .topbar{
+         width: calc(100% - 290px);
     }
 }
