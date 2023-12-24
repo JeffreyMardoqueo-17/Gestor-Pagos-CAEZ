@@ -40,11 +40,23 @@ const RegistroAlumno = () => {
                     <input type="text" className="form-control" id="inputApellido" />
                 </div>
                 {/* //Grado */}
-                <div className="col-md-4">
-                    <label htmlFor="inputState" className="form-label">State</label>
-                    <select id="inputState" className="form-select">
-                        <option defaultValue>Choose...</option>
-                        <option>...</option>
+                <div className="col-md-2">
+                    <label htmlFor="inputGrado" className="form-label">Grado</label>
+                    <select id="inputGrado" className="form-select">
+                        <option defaultValue>Kinder</option>
+                        <option>Primer Grado</option>
+                        <option>Segundo Grado</option>
+                        <option>Tercer Grado</option>
+                        <option>Cuarto Grado</option>
+                        <option>Quinto Grado</option>
+                    </select>
+                </div>
+                {/* //tipo doc */}
+                 <div className="col-md-2">
+                    <label htmlFor="inputGrado" className="form-label">Tipo Documento</label>
+                    <select id="inputGrado" className="form-select">
+                        <option defaultValue>NIE</option>
+                        <option>DUI</option>
                     </select>
                 </div>
                 <div className="col-md-6">
