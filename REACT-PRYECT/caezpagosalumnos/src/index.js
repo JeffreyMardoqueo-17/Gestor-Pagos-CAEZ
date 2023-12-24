@@ -5,13 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Table} from './components/Table.jsx'
 import Menu from './components/Menu.jsx'
-
+import RegistroAlumno from './components/RegistroAlumno.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Menu /> */}
-    <App />
+    {/* <App /> */}
     {/* <Table></Table> */}
+    <RegistroAlumno />
   </React.StrictMode>
 );
 

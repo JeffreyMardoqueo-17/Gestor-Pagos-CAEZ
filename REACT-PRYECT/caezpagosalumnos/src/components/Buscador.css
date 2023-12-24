@@ -114,7 +114,7 @@
         /* Ajusta el tamaño de la fuente del campo de búsqueda para dispositivos más pequeños */
     }
 }
-@media (width > 600px){
+@media (width > 1000px){
     .topbar{
          width: calc(100% - 290px);
     }
