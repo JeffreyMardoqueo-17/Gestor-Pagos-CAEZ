@@ -30,12 +30,12 @@ const RegistroAlumno = () => {
         <div className='formulario'>
             <form className="row g-3">
                 {/* //Nombre */}
-                <div className="col-md-6">
+                <div className="col-md-3">
                     <label htmlFor="inputName" className="form-label">Nombre</label>
                     <input type="text" className="form-control" id="inputName" />
                 </div>
                 {/* //Apellido */}
-                <div className="col-md-6">
+                <div className="col-md-3">
                     <label htmlFor="inputApellido" className="form-label">Apellido</label>
                     <input type="text" className="form-control" id="inputApellido" />
                 </div>
