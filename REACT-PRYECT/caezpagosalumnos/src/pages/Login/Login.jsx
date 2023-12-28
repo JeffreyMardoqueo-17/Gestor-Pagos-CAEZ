@@ -1,6 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Login.css'
+
+
 const Login = () => {
+    useEffect(() => {
+        const container = document.getElementById('container');
+        const registerBtn = document.getElementById('register');
+        const loginBtn = document.getElementById('login');
+
+        const handleRegisterClick = () => {
+            container.classList.add('active');
+        };
+
+        const handleLoginClick = () => {
+            container.classList.remove('active');
+        };
+
+        registerBtn.addEventListener('click', handleRegisterClick);
+        loginBtn.addEventListener('click', handleLoginClick);
+
+        // Limpieza de los event listeners al desmontar el componente
+        return () => {
+            registerBtn.removeEventListener('click', handleRegisterClick);
+            loginBtn.removeEventListener('click', handleLoginClick);
+        };
+    }, []); // El array vacío asegura que este efecto se ejecute solo una vez después del montaje inicial
+
     return (
         <div className='login'>
             <div className="container" id="container">
@@ -24,10 +49,10 @@ const Login = () => {
                     <form>
                         <h1>Sign In</h1>
                         <div className="social-icons">
-                            <a href="#" className="icon"><i className="fa-brands fa-google-plus-g"></i></a>
-                            <a href="#" className="icon"><i className="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" className="icon"><i className="fa-brands fa-github"></i></a>
-                            <a href="#" className="icon"><i className="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" className="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                            <a href="#" className="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" className="icon"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" className="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                         </div>
                         <span>or use your email password</span>
                         <input type="email" placeholder="Email" />
