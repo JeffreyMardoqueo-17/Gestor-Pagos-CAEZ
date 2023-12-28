@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import {Table} from './components/Table.jsx'
 import Menu from './components/Menu.jsx'
 import RegistroAlumno from './components/RegistroAlumno.jsx';
+import Login from './pages/Login/Login.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Menu /> */}
-    <App />
+    {/* <App /> */}
+    <Login />
     {/* <Table></Table> */}
     {/* <RegistroAlumno /> */}
   </React.StrictMode>
