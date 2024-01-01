@@ -8,14 +8,16 @@ import {Table} from './components/Table.jsx'
 import Menu from './components/Menu.jsx'
 import RegistroAlumno from './components/RegistroAlumno.jsx';
 import Login from './pages/Login/Login.jsx';
+import NavBar from './components/NavBar/NavBar.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Menu /> */}
     {/* <App /> */}
-    <Login />
+    {/* <Login /> */}
     {/* <Table></Table> */}
     {/* <RegistroAlumno /> */}
+    <NavBar />
   </React.StrictMode>
 );
 
